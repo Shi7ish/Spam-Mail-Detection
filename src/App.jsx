@@ -11,7 +11,7 @@ const App = () => {
     setLoading(true);
 
     try {
-      const response = await fetch("https://spam-mail-detection-backend.onrender.com//predict", {
+      const response = await fetch("https://spam-mail-detection-backend.onrender.com/predict", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email: text }),
